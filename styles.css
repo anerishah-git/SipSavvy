@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*general layout style*/
+main{
+    max-width: 40rem;
+    margin: 0 auto;
+    background-color: rgb(242, 241, 251);
+}
+
+/* general image styling*/
+img{
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* general type style ------------------------ */
+html{
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /*line-height: 1.4em;*/
+    text-align: left;
+    color: #080845;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 120%;
+
+    padding: 1.25rem;
+}
+h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 120%;
+    
+    padding: 1.25rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: normal;
+
+    padding: 0rem 1.25rem 0rem 1.25rem;
+}
+
+/* drrop down styling */
+details > summary{
+    cursor: pointer;
+    margin: 1.25rem;
+    padding: 0rem 0rem 0.5rem 0rem;
+    border-bottom: 0.5px solid #080845;
+}
+details > summary:hover{
+    font-style: italic;
+}
+details > summary:focus{
+    font-style: bold;
+    border-bottom: 0px;
+}
+
+
+/*
+input[type="checkbox"] {
+    outline: 3px solid black;
+}*/
+
+
+/* hook section styling ----------- */
+
+.hook{
+    border-radius: 1.875rem 1.875rem 0rem 0rem;
+    background: #C2D5FF;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.yell{
+    background: #fddea0;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.red{
+    background: #fbbba6;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.last{
+    border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+    background: #C2D5FF;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
