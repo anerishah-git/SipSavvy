@@ -7,7 +7,7 @@
 main{
     max-width: 40rem;
     margin: 0 auto;
-    background-color: rgb(242, 241, 251);
+    background-color: rgb(255, 255, 255);
 }
 
 /* general image styling*/
@@ -25,7 +25,7 @@ html{
     font-style: normal;
     /*line-height: 1.4em;*/
     text-align: left;
-    color: #080845;
+    color: #020224;
 }
 
 h2{
@@ -33,29 +33,30 @@ h2{
     font-weight: 400;
     line-height: 120%;
 
-    padding: 1.25rem;
+    padding: 1.6rem;
 }
 h3{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 120%;
     
-    padding: 1.25rem;
+    padding: 1.6rem;
 }
 
 p{
     font-size: 1rem;
     line-height: normal;
 
-    padding: 0rem 1.25rem 0rem 1.25rem;
+    padding: 0rem 1.6rem 0rem 1.6rem;
 }
 
-/* drrop down styling */
+/* drop down styling 
 details > summary{
     cursor: pointer;
-    margin: 1.25rem;
+    border-bottom: 0.5px solid #ffffff;
+
+    margin: 1.5rem;
     padding: 0rem 0rem 0.5rem 0rem;
-    border-bottom: 0.5px solid #080845;
 }
 details > summary:hover{
     font-style: italic;
@@ -63,7 +64,8 @@ details > summary:hover{
 details > summary:focus{
     font-style: bold;
     border-bottom: 0px;
-}
+} */
+
 
 
 /*
@@ -71,29 +73,178 @@ input[type="checkbox"] {
     outline: 3px solid black;
 }*/
 
+/* header styling */
+.topbar{
+    /*width: 50%;*/
+    margin: 0 auto;
+    padding: 1.6rem;
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    font-weight: bold;
+}
+
+.about{
+    background: var(--yellow, #FFBA30);
+
+    display: inline-flex;
+    height: 0.8rem;
+    padding: 0rem 0.1875rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 
 /* hook section styling ----------- */
 
 .hook{
-    border-radius: 1.875rem 1.875rem 0rem 0rem;
+    border-radius: 2rem 2rem 0rem 0rem;
     background: #C2D5FF;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+
+    padding: 1.6rem 0rem 1.6rem 0rem;
 }
 
-.yell{
-    background: #fddea0;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+/* styling an img */
+.rethink{
+    margin-top: -1rem;
+    overflow: auto;
 }
 
-.red{
-    background: #fbbba6;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+/* styling first section -------------- */
+
+.first{
+    color: var(--white, #FFF);
+    background: #050540;
+    padding: 1.6rem 0rem 1.6rem 0rem;
 }
 
-.last{
-    border-radius: 0rem 0rem 1.875rem 1.875rem;
+.first h3 {
+    padding-bottom: 0rem;
+    line-height: 140%;
+}
+
+/* drop down styling */
+.first details > summary{
+    cursor: pointer;
+    border-bottom: 0.5px solid #ffffff;
+
+    margin: 1.6rem;
+    padding: 0rem 0rem 0.5rem 0rem;
+}
+.first details > summary:hover{
+    border-bottom: none;
+    transition: transform 0.2s ease;
+}
+.first details > summary:focus{
+    font-style: bold;
+} 
+
+/* stats info styling */
+.stats{
+    display: inline-flex;
+    padding: 1.2rem  1.6rem 1.2rem 1.4rem;
+    align-items: center;
+    gap: 2rem;
+
+    background: #282878;
+}
+.stats p{
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 0rem;
+
+}
+
+/* styling second section -------------- */
+
+.second{
+    color: var(--white, #FFF);
+    background: #050540;
+    padding: 1.6rem 0rem 1.6rem 0rem;
+}
+
+.second details{
+    padding: 1.6rem;
+}
+
+.second summary{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 150%;
+
+    cursor: pointer;
+    border-bottom: 0.5px solid #ffffff;
+    padding-bottom: 1rem;
+}
+
+.second details > summary:hover{
+    font-style: normal;
+}
+.second details > summary:focus{
+    border-bottom: none;
+} 
+
+/* summary within class styling*/
+summary::-webkit-details-marker,
+summary::marker {
+  display: none;
+}
+
+.custom-s::after {
+    content: "\002B"; /* Unicode code for a plus symbol (+) */
+    display: inline-block;
+    margin-top: -5rem;
+    margin-left: 8px;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+}
+.custom-d[open] .custom-s::after {
+    transform: rotate(45deg);
+}
+
+/* styling form 
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #ccc;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+  
+input[type="checkbox"]:checked {
+    background-color: #FFBF3E;
+    border-color: #FFBF3E;
+}
+input[type="checkbox"]:checked::after {
+    content: "\2713"; 
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 2px;
+  } 
+  */
+
+label {
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+/* styling third section -------------- */
+.third{
+    border-radius: 0rem 0rem 2rem 2rem;
 
     background: #C2D5FF;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+    padding: 1.6rem 0rem 1.6rem 0rem;
 }
 
