@@ -32,7 +32,7 @@
       <section class="hook">
         <h2><b>Let’s optimise your everyday potential with a wiser choice of sip!</b></h2>
         <p>Right choice of drink to hydrate is essential to maximise your everyday performance rate and each choice of sip your make matters - Hydrate Smart!</p>
-        <a href="" class="btn"> Start Your Jouney! </a>
+        <a href="#form" class="btn"> Start Your Jouney! </a>
       </section>
 
       <img src="assets/rethink drink.svg" class="rethink" alt="Rethink Your Drink">
@@ -89,20 +89,30 @@
         <p>When its comes to saying no to soda, it requires more than just willpower.</p>
         <details class="custom-d">
           <summary class="custom-s">Recognise Signs of Soda Addiction</summary>
-           <form action="/action_page.php">
-             <input type="checkbox" id="addiction1" name="addiction1" value="Craving">
-             <label for="addiction1"> Strong and challenging cravings for soda.</label><br>
-             <input type="checkbox" id="addiction2" name="addiction2" value="Quantity Need">
-             <label for="addiction2"> Need to consume more quantity, to achieve the same level of satisfaction.</label><br>
-             <input type="checkbox" id="addiction3" name="addiction3" value="Quench">
-             <label for="addiction3"> Only feeling quenched by consuming soda.</label><br>
-             <input type="checkbox" id="addiction4" name="addiction4" value="Hidding">
-             <label for="addiction4"> Hiding your soda consummation habit.</label><br>
-             <input type="checkbox" id="addiction5" name="addiction5" value="Suffer">
-             <label for="addiction5"> Suffering from physical health issues like tooth decay and weight gain.</label><br>
-             <input type="checkbox" id="addiction6" name="addiction6" value="Withdrawl">
-             <label for="addiction6"> Having withdrawal symptoms when unable to have soda.</label>
-          </form>
+          <label class="container"> Strong and challenging cravings for soda.
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"> Need to consume more quantity, to achieve the same level of satisfaction.
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"> Feeling quenched only by consuming soda.
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"> Hiding your soda consummation habit.
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"> Suffering from physical health issues like tooth decay and weight gain.
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"> Having withdrawal symptoms when unable to have soda.
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
         </details>
       </section>
 
@@ -113,15 +123,17 @@
         <ol>
           <li>Consistent habit of drinking water, instead of waiting till you feel thirsty.</li>
           <li>Reduce the easy access to soda and other sugary drinks. Begin by avoiding purchasing them altogether.</li>
-          <li>Avoid getting hungry: Hunger drives cravings, including those for soda.</li>
+          <li>Avoid getting hungry; hunger drives cravings, including those for soda.</li>
           <li>Sugar cravings are common, so keep healthy options handy.</li>
           <li>Always carry a refillable water bottle!</li>
         </ol>
       </section>
+      
+      <img src="" class="stickers" alt="">
 
       <section class="final">
        <h2><b>Start Your Journey</b> of Mindful Drinking</h2>
-       <p>Let us all commit to choosing better over soda to uplift our health. Together, we can make a positive impact on our bodies and the environment. Let's stay hydrated and feel our best!</p>
+       <p>Let's commit to uplift our health beyond soda. Together, we can make a positive impact on our bodies and the environment. Let's stay hydrated and feel our best!</p>
        <div>
          <h3>Signup with Sip Savvy to Elevate Your Journey towards Mindful Drinking:</h3>
          <ul>
@@ -129,16 +141,19 @@
             <li>21-day planner, to start your journey on breaking and making better drinking habits.</li>
             <li>Chance to participate in activities that helps you stick to sipping wisely and staying savvy.</li>
           </ul>
-          <form action="process_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <input type="submit" value="Submit">
-          </form>
-        </div>
+          <section id="form">
+            <form action="process_form.php" method="POST">
+              <div class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <input type="submit" value="Start Your Journey!">
+            </form>
+          </section>
       </section>
 
       <footer>
