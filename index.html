@@ -13,21 +13,36 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="styles.css"> 
+     <script src="js.java"></script>
  </head>
 
  <body>
 
     <header>
         <ul class="topbar">
-          <li> <img src="assets/logomark.svg" class="logomark" alt="Sip Savvy"> </li>
-          <li class="about">About</li>
-        </ul>      
+          <li> <img src="assets/logomark.png" class="logomark" alt="Sip Savvy"> </li>
+          <li class="about"><a class="abt popup-abt" href="#abt">About</a></li>
+        </ul> 
     </header>
 
     <main>
 
-      <h1><img src="assets/logo.svg" class="logo" alt="Sip Savvy"></h1>
-      <img src="" class="stickers" alt="">
+      <section id="abt" class="abtabt">s
+        <div class="popup-wrap">
+          <div class="popup-box">
+            <h2>About Us</h2>
+            <p>Welcome to 'Sip Savvy,' your online destination for embracing healthier lifestyle habits, with a special focus on combatting the widespread soda culture among young adults. Our mission is to shed light on the detrimental effects of sodas while encouraging mindful drinking choices.<br><br>
+               Whether you're striving to quit soda or embrace mindful drinking, 'Sip Savvy' is here to provide unwavering support and motivation. We offer email subscription, to provide extended guidance and personalised assistance in building healthier habits.<br><br>
+               <b>Join us as we embark on this aware and positive habit building journey together. Let's prioritise hydration, make mindful decisions, and embrace a healthier way of life.</b>
+            </p>
+            <a class="close-abt popup-close" href="#about">x</a>
+          </div>
+        </div>  
+      </section> 
+
+      <h1><img src="assets/logo-gif.gif" class="logo" alt="Sip Savvy"></h1>
+
+      <img src="assets/stickers.png" class="stickers" alt="Three stickers placed together, emphasising on choosing a better drink over soda">
 
       <section class="hook">
         <h2><b>Let’s optimise your everyday potential with a wiser choice of sip!</b></h2>
@@ -129,7 +144,7 @@
         </ol>
       </section>
       
-      <img src="" class="stickers" alt="">
+      <img src="assets/stickers.png" class="stickers2" alt="Three stickers placed together, emphasising on choosing a better drink over soda">
 
       <section class="final">
        <h2><b>Start Your Journey</b> of Mindful Drinking</h2>
@@ -137,9 +152,9 @@
        <div>
          <h3>Signup with Sip Savvy to Elevate Your Journey towards Mindful Drinking:</h3>
          <ul>
-            <li>Weekly newsletter that motivates and reminds you to practice mindful drinking.</li>
-            <li>21-day planner, to start your journey on breaking and making better drinking habits.</li>
-            <li>Chance to participate in activities that helps you stick to sipping wisely and staying savvy.</li>
+            <li><b>Weekly newsletter</b> that motivates and reminds you to practice mindful drinking.</li>
+            <li><b>21-day planner</b>, to start your journey on breaking and making better drinking habits.</li>
+            <li><b>Chance to participate</b> in activities that helps you build habits to sip wisely and stay savvy.</li>
           </ul>
           <section id="form">
             <form action="process_form.php" method="POST">
@@ -157,7 +172,6 @@
       </section>
 
       <footer>
-        <img class="footerimg" src="" alt=" ">
         <p>©2022 Aneri Shah</p>
       </footer>
 

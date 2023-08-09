@@ -50,46 +50,41 @@ p{
     padding: 0rem 1.6rem 0rem 1.6rem;
 }
 
-/* drop down styling 
-details > summary{
-    cursor: pointer;
-    border-bottom: 0.5px solid #ffffff;
-
-    margin: 1.5rem;
-    padding: 0rem 0rem 0.5rem 0rem;
-}
-details > summary:hover{
-    font-style: italic;
-}
-details > summary:focus{
-    font-style: bold;
-    border-bottom: 0px;
-} */
-
-
 
 /*
 input[type="checkbox"] {
     outline: 3px solid black;
 }*/
 
-/* header styling */
+
+/* header styling ---------- */
+header{
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+}
 .topbar{
     /*width: 50%;*/
     margin: 0 auto;
-    padding: 1.6rem;
+    padding: 1rem 1.6rem 1rem 1.6rem;
 
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     font-weight: bold;
+    
 }
 
-.about{
+.logomark{
+    width: 30%;
+}
+
+.abt{
     background: var(--yellow, #FFBA30);
 
     display: inline-flex;
@@ -98,10 +93,95 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    &:hover {
+        opacity: 0.75;
+      }
+}
+
+.popup-wrap {
+    width:100%;
+    height:100%;
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    content:'';
+    background:rgba(0,0,0,0.85);
+}
+.popup-box {
+    margin: 2.5rem;
+    padding:1rem 1rem 2rem 1rem;
+    /*transform:translate(-50%, -50%) scale(0.5);
+    top:50%;
+    left:50%; */
+    position:absolute;
+    box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+    border-radius:2rem;
+    background:#FFBA30;
+    text-align:left;
+}
+
+.close-abt {
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:14px;
+    padding: 0.5rem;
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+
+    font-size: 1.5rem;
+    text-decoration:none;
+    color:#050540;
+    line-height:190%;
+    
+    &:hover {
+      -webkit-transform:rotate(180deg);
+      transform:rotate(180deg);
+    }
+}
+.transform-in, .transform-out {
+    display:block;
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+  
+.transform-in {
+      -webkit-transform:translate(-50%, -50%) scale(1);
+      transform:translate(-50%, -50%) scale(1);
+}
+  
+.transform-out {
+      -webkit-transform:translate(-50%, -50%) scale(0.5);
+      transform:translate(-50%, -50%) scale(0.5);
 }
 
 
-/* hook section styling --------------- */
+
+.logo{
+    margin-top: 3rem;
+}
+
+/*.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}*/
+
+.stickers{
+    margin-bottom: -3rem;
+
+     /*position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; */
+}
+
+/* hook section styling ---------------------- */
 
 .hook{
     border-radius: 2rem 2rem 0rem 0rem;
@@ -110,7 +190,7 @@ input[type="checkbox"] {
     padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
-/* styling button*/
+/* styling link as button*/
 
 a.btn:link{
     border-radius: 0.6rem;
@@ -151,6 +231,7 @@ a.btn:active{
 /* styling an img */
 .rethink{
     margin-top: -1rem;
+    margin-bottom: -0.5rem;
     overflow: auto;
 }
 
@@ -160,7 +241,7 @@ a.btn:active{
 .first{
     color: var(--white, #FFF);
     background: #050540;
-    padding: 1.6rem 0rem 1.6rem 0rem;
+    padding: 1rem 0rem 1.6rem 0rem;
 }
 
 .first h3 {
@@ -330,7 +411,11 @@ label {
     margin-right: 1rem;
 }
 
-/* styling third section -------------- */
+.stickers2{
+    margin-top: -3rem;
+}
+
+/* styling final section -------------- */
 
 .final p{
     margin-bottom: 2rem;
@@ -398,12 +483,28 @@ input[type="submit"] {
 
     cursor: pointer;
 }
+input[type="submit"]:visited {
+    color: #282878;
+    border: 0.5px solid var(--logo-main, #867DFF);
+    box-shadow: none;
+}
 input[type="submit"]:hover {
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25) inset;
 }
-  
 input[type="submit"]:focus {
     outline: none;
     background-color: #867DFF;
+}
+input[type="submit"]:active {
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+/* footer -------------- */
+footer{
+    padding: 1rem;
+    text-align: center;
+    color: #FFF;
+    background-color: #050540;
 }
 
