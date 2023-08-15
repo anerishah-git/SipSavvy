@@ -8,6 +8,7 @@ main{
     max-width: 40rem;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
+    position: relative;
 }
 
 /* general image styling*/
@@ -51,19 +52,15 @@ p{
 }
 
 
-/*
-input[type="checkbox"] {
-    outline: 3px solid black;
-}*/
-
-
-/* header styling ---------- */
+/* header styling -------------- */
 header{
     position: fixed;
+    z-index: 1;
     top: 0;
     background-color: #ffffff;
     width: 100%;
 }
+
 .topbar{
     /*width: 50%;*/
     margin: 0 auto;
@@ -84,7 +81,7 @@ header{
     width: 30%;
 }
 
-.abt{
+.popup-abt{
     background: var(--yellow, #FFBA30);
 
     display: inline-flex;
@@ -93,35 +90,31 @@ header{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    &:hover {
-        opacity: 0.75;
-      }
 }
 
-.popup-wrap {
+.popup-bg {
     width:100%;
     height:100%;
+
     display:none;
-    position:absolute;
+    position:fixed;
     top:0px;
-    left:0px;
     content:'';
     background:rgba(0,0,0,0.85);
 }
+
 .popup-box {
-    margin: 2.5rem;
-    padding:1rem 1rem 2rem 1rem;
-    /*transform:translate(-50%, -50%) scale(0.5);
-    top:50%;
-    left:50%; */
-    position:absolute;
-    box-shadow:0px 2px 16px rgba(0,0,0,0.5);
-    border-radius:2rem;
     background:#FFBA30;
     text-align:left;
+    margin: 2.5rem;
+    padding: 5rem 1rem 2rem 1rem;
+
+    position:fixed;
+    box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+    border-radius:2rem;
 }
 
-.close-abt {
+.closebtn {
     display:inline-block;
     position:absolute;
     top:0px;
@@ -140,6 +133,8 @@ header{
       transform:rotate(180deg);
     }
 }
+
+/*
 .transform-in, .transform-out {
     display:block;
     -webkit-transition:all ease 0.5s;
@@ -155,30 +150,21 @@ header{
       -webkit-transform:translate(-50%, -50%) scale(0.5);
       transform:translate(-50%, -50%) scale(0.5);
 }
+*/
 
 
 
 .logo{
     margin-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-/*.fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}*/
 
 .stickers{
-    margin-bottom: -3rem;
-
-     /*position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1; */
+    position: fixed;
+    top: 24.5rem;
+    bottom: 120%;
+    z-index: 0;
 }
 
 /* hook section styling ---------------------- */
@@ -187,7 +173,9 @@ header{
     border-radius: 2rem 2rem 0rem 0rem;
     background: #C2D5FF;
 
+    position: relative;
     padding: 1.5rem 0rem 1.5rem 0rem;
+    margin-top: 2rem;
 }
 
 /* styling link as button*/
@@ -241,7 +229,9 @@ a.btn:active{
 .first{
     color: var(--white, #FFF);
     background: #050540;
+
     padding: 1rem 0rem 1.6rem 0rem;
+    position: relative;
 }
 
 .first h3 {
@@ -272,6 +262,7 @@ a.btn:active{
     align-items: center;
     gap: 2rem;
 
+    position: relative;
     background: #282878;
 }
 .stats p{
@@ -286,8 +277,12 @@ a.btn:active{
 .second{
     color: var(--white, #FFF);
     background: #050540;
+
+    position: relative;
     padding: 1.6rem 0rem 1.6rem 0rem;
 }
+
+/* summary within class styling   */
 
 .second details{
     padding: 1.6rem;
@@ -310,14 +305,14 @@ a.btn:active{
     border-bottom: none;
 } 
 
-/* summary within class styling*/
-summary::-webkit-details-marker,
-summary::marker {
-  display: none;
+.second summary::marker{ display:none; 
+} 
+.second summary{ 
+    list-style: none
 }
 
 .custom-s::after {
-    content: "\002B"; /* Unicode code for a plus symbol (+) */
+    content: "\002B"; 
     display: inline-block;
     margin-top: -5rem;
     margin-left: 8px;
@@ -394,6 +389,8 @@ label {
 
     background: #C2D5FF;
     padding: 1.6rem 0rem 1.6rem 0rem;
+    position: relative;
+    z-index: 1;
 }
 .third h3{
     font-weight: 400;
@@ -413,9 +410,18 @@ label {
 
 .stickers2{
     margin-top: -3rem;
+    margin-bottom: -0.5rem;
+    background-color: #FFF;
+    position: relative;
+    z-index: 0;
 }
 
 /* styling final section -------------- */
+
+.final{
+    background-color: #FFF;
+    position: relative;
+}
 
 .final p{
     margin-bottom: 2rem;
@@ -506,5 +512,6 @@ footer{
     text-align: center;
     color: #FFF;
     background-color: #050540;
+    position: relative;
 }
 
