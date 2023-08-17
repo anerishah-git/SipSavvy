@@ -55,9 +55,9 @@ p{
 /* header styling -------------- */
 header{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
     width: 100%;
 }
 
@@ -78,11 +78,12 @@ header{
 }
 
 .logomark{
-    width: 30%;
+    width: 14%;
 }
 
 .popup-abt{
     background: var(--yellow, #FFBA30);
+    font-size: 1.2rem;
 
     display: inline-flex;
     height: 0.8rem;
@@ -92,24 +93,20 @@ header{
     flex-shrink: 0;
 }
 
-.popup-bg {
-    width:100%;
-    height:100%;
-
-    display:none;
-    position:fixed;
-    top:0px;
-    content:'';
+#abt{
+    position: fixed;
+    top: -200rem; 
+    z-index: 2; 
+ 
     background:rgba(0,0,0,0.85);
-}
+ }
 
 .popup-box {
     background:#FFBA30;
     text-align:left;
-    margin: 2.5rem;
-    padding: 5rem 1rem 2rem 1rem;
+    margin: 5rem 2.5rem 5rem 2.5rem;
+    padding: 1rem 1rem 2rem 1rem;
 
-    position:fixed;
     box-shadow:0px 2px 16px rgba(0,0,0,0.5);
     border-radius:2rem;
 }
@@ -117,16 +114,19 @@ header{
 .closebtn {
     display:inline-block;
     position:absolute;
-    top:0px;
+    top:50px;
     right:14px;
-    padding: 0.5rem;
-    -webkit-transition:all ease 0.5s;
+    padding: 0rem 0.5rem 0.25rem 0.5rem;
+
     transition:all ease 0.5s;
 
     font-size: 1.5rem;
     text-decoration:none;
     color:#050540;
-    line-height:190%;
+    background-color: #FFBA30;
+    box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+    border-radius: 5rem;
+    border: none;
     
     &:hover {
       -webkit-transform:rotate(180deg);
@@ -162,7 +162,7 @@ header{
 
 .stickers{
     position: fixed;
-    top: 24.5rem;
+    top: 25rem;
     bottom: 120%;
     z-index: 0;
 }
@@ -216,13 +216,6 @@ a.btn:active{
     text-decoration: underline;
 }
 
-/* styling an img */
-.rethink{
-    margin-top: -1rem;
-    margin-bottom: -0.5rem;
-    overflow: auto;
-}
-
 
 /* styling first section -------------- */
 
@@ -230,8 +223,29 @@ a.btn:active{
     color: var(--white, #FFF);
     background: #050540;
 
-    padding: 1rem 0rem 1.6rem 0rem;
+    padding: 0rem 0rem 1.6rem 0rem;
     position: relative;
+}
+
+/* styling an img */
+.rethink{
+    margin-top: -1rem;
+    margin-bottom: -0.5rem;
+    overflow: auto;
+} 
+
+.first h2{
+    padding-top: 2.5rem;
+}
+.first p{
+    margin-bottom: 2rem;
+}
+
+/*styling video*/
+.video{
+    width: 100%;
+    height: 100%;
+    margin: 0rem auto;
 }
 
 .first h3 {
@@ -416,6 +430,38 @@ label {
     z-index: 0;
 }
 
+
+/*styling diet soda sec*/
+.diet{
+    background: #020230;
+    color: #ffffff;
+    position: relative;
+    padding: 1rem 0rem 2rem 0rem;
+}
+.diet p{
+    padding-bottom: 1rem;
+}
+.lk:link{
+    color: #FFDA90;
+}
+.lk:visited{
+    color: #C2D5FF;
+}
+.lk:hover{
+    text-decoration: none;
+    color: #FFBA30;
+}
+.lk:focus{
+    color: #ffffff;
+    font-weight: bold;
+}
+.lk:active{
+    color: #FFBA30;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
 /* styling final section -------------- */
 
 .final{
@@ -464,13 +510,15 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5px;
+    width: 100%;
+    padding: 0rem 1.6rem 0rem 1.6rem;
 
     font-style: bold;
 }
 
 input[type="text"],
 input[type="email"] {
-  width: 21rem;
+  width: 100%;
   padding: 12px;
   margin-bottom: 0.5rem;
   border: 2px solid #C2D5FF;

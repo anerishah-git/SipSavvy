@@ -19,27 +19,14 @@
  <body>
 
     <header>
-        <ul class="topbar" id="abt">
-          <li> <img src="assets/logomark.png" class="logomark" alt="Sip Savvy"> </li>
-          <li class="about"><div class="popup-abt" href="#abt"><button onclick="openAbt()">About</button></div></li>
-        </ul> 
+        <div class="topbar">
+          <img src="assets/logomark.png" class="logomark" alt="Sip Savvy"> 
+          <buttons class="popup-abt" onclick="openAbt()">About</button>
+          </div> 
     </header>
 
 
     <main>
-
-      <article id="abt">
-        <div class="popup-bg">
-          <div class="popup-box">
-            <h2>About Us</h2>
-            <p>Welcome to 'Sip Savvy,' your online destination for embracing healthier lifestyle habits, with a special focus on combatting the widespread soda culture among young adults. Our mission is to shed light on the detrimental effects of sodas while encouraging mindful drinking choices.<br><br>
-               Whether you're striving to quit soda or embrace mindful drinking, 'Sip Savvy' is here to provide unwavering support and motivation. We offer email subscription, to provide extended guidance and personalised assistance in building healthier habits.<br><br>
-               <b>Join us as we embark on this aware and positive habit building journey together. Let's prioritise hydration, make mindful decisions, and embrace a healthier way of life.</b>
-            </p>
-            <button aria-label="Close" class="closebtn" onclick="closeAbt()">&times;</button>
-          </div> 
-        </div>
-      </article> 
 
       <article>
         <h1><img src="assets/logo-gif.gif" class="logo" alt="Sip Savvy"></h1>
@@ -48,7 +35,7 @@
   
         <section class="hook">
           <h2><b>Let’s optimise your everyday potential with a wiser choice of sip!</b></h2>
-          <p>Right choice of drink to hydrate is essential to maximise your everyday performance rate and each choice of sip your make matters - Hydrate Smart!</p>
+          <p>Right choice of drink to hydrate is essential to maximise your everyday performance rate and each choice of every sip you make matters - Hydrate Smart!</p>
           <a href="#form" class="btn"> Start Your Jouney! </a>
         </section>
   
@@ -58,7 +45,7 @@
 
           <h2><b>Say No to Soda</b>, Kick the Habit and Reclaim Your Health!</h2>
           <p>A step towards better hydration requires limiting your intake of soda and other sugary drinks as they dehydrate rather than quench your thirst - Rethink Your Choice of Sip!</p>
-          <video width="320" height="240" controls>
+          <video class="video" controls>
             <source src="movie.mp4" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
           </video>
@@ -103,8 +90,8 @@
         </section>
   
         <section class="second">
-          <h2><b>Soda is Addictive</b>, and its time to break-free from the Soda Trap!</h2>
-          <p>When its comes to saying no to soda, it requires more than just willpower.</p>
+          <h2><b>Soda is Addictive</b>, and its' time to break-free from the Soda Trap!</h2>
+          <p>When it comes to saying no to soda, it requires more than just willpower.</p>
           <details class="custom-d">
             <summary class="custom-s">Recognise Signs of Soda Addiction</summary>
             <label class="container"> Strong and challenging cravings for soda.
@@ -133,10 +120,19 @@
             </label>
           </details>
         </section>
+
+        <section class="diet">
+          <h2>Diet Soda is Not A Better Option</h2>
+          <p>It maybe low in sugar and calories, but it provides no nutritional value and can harm your teeth. Observational studies have also linked it to various other health conditions.</p>
+          <p>Learn more about it on <a href="https://www.uclahealth.org/news/observational-studies-shed-light-on-diet-soda-consumption#:~:text=These%20include%20weight%20gain%2C%20disruptions,were%20identified%20in%20the%20research." class="lk">uclahealth.org</a></p>
+        </section>
   
         <section class="third">
           <h2>It’s time to create <b>Mindful Drinking Habit</b></h2>
-          <img src="" class="drink" alt="">
+          <video class="video" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          </video>
           <h3>Let’s become more mindful of each sip we take and make better choices of drink - Water is the Way!</h3>
           <ol>
             <li>Consistent habit of drinking water, instead of waiting till you feel thirsty.</li>
@@ -158,7 +154,7 @@
            <ul>
               <li><b>Weekly newsletter</b> that motivates and reminds you to practice mindful drinking.</li>
               <li><b>21-day planner</b>, to start your journey on breaking and making better drinking habits.</li>
-              <li><b>Chance to participate</b> in activities that helps you build habits to sip wisely and stay savvy.</li>
+              <li><b>Chance to participate</b> in activities that help you build habits to sip wisely and stay savvy.</li>
             </ul>
             <section id="form">
               <form action="process_form.php" method="POST">
@@ -176,6 +172,17 @@
           </section>
 
       </article>
+
+      <article id="abt">
+        <div class="popup-box">
+          <h2>About Us</h2>
+          <p>Welcome to 'Sip Savvy,' your online destination for embracing healthier hydration habits, with a special focus on combatting the widespread soda culture among young adults. Our mission is to shed light on the detrimental effects of sodas while encouraging mindful drinking choices.<br><br>
+             Whether you're striving to quit soda or embrace mindful drinking, 'Sip Savvy' is here to provide unwavering support and motivation. We offer email subscription, to provide extended guidance and personalised assistance in building healthier habits.<br><br>
+             <b>Join us as we embark on this aware and positive habit building journey together. <br> Let's prioritise hydration, make mindful decisions, and embrace a healthier way of life.</b>
+          </p>
+          <button aria-label="Close" class="closebtn" onclick="closeAbt()">&times;</button>
+        </div>
+     </article> 
 
       <footer>
         <p>©2022 Aneri Shah</p>
