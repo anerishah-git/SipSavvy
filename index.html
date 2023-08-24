@@ -20,7 +20,7 @@
 
     <header>
         <div class="topbar">
-          <img src="assets/logomark.png" class="logomark" alt="Sip Savvy"> 
+          <a href="#main" aria-label="Back to top" class="logomark"><img src="assets/logomark.png" alt="Sip Savvy"></a> 
           <buttons class="popup-abt" onclick="openAbt()">About</button>
           </div> 
     </header>
@@ -28,7 +28,7 @@
 
     <main>
 
-      <article>
+      <article id="main">
         <h1><img src="assets/logo-gif.gif" class="logo" alt="Sip Savvy"></h1>
 
         <img src="assets/stickers.png" class="stickers" alt="Three stickers placed together, emphasising on choosing a better drink over soda">
@@ -176,7 +176,7 @@
       <article id="abt">
         <div class="popup-box">
           <h2>About Us</h2>
-          <p>Welcome to 'Sip Savvy,' your online destination for embracing healthier hydration habits, with a special focus on combatting the widespread soda culture among young adults. Our mission is to shed light on the detrimental effects of sodas while encouraging mindful drinking choices.<br><br>
+          <p>Welcome to Sip Savvy, your online destination for embracing healthier hydration habits, with a special focus on combatting the widespread soda culture among young adults. Our mission is to shed light on the detrimental effects of sodas while encouraging mindful drinking choices.<br><br>
              Whether you're striving to quit soda or embrace mindful drinking, 'Sip Savvy' is here to provide unwavering support and motivation. We offer email subscription, to provide extended guidance and personalised assistance in building healthier habits.<br><br>
              <b>Join us as we embark on this aware and positive habit building journey together. <br> Let's prioritise hydration, make mindful decisions, and embrace a healthier way of life.</b>
           </p>
@@ -185,7 +185,13 @@
      </article> 
 
       <footer>
-        <p>©2022 Aneri Shah</p>
+        <div class="btt">
+          <a href="#main" aria-label="Back to Top"><img src="assets/backtotop.png" alt="Upwards Arrow"></a> 
+        </div>
+
+        <div class="credits">
+          <p>©2022 Aneri Shah</p>
+        </div>
       </footer>
 
     </main>
