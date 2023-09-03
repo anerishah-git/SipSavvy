@@ -52,7 +52,7 @@ p{
 }
 
 
-/* header styling -------------- */
+/* header styling ------------------------------------------------------------------------ */
 header{
     position: fixed;
     z-index: 2;
@@ -177,7 +177,7 @@ header{
     z-index: 0;
 }
 
-/* hook section styling ---------------------- */
+/* hook section styling ---------------------------------------------------- */
 
 .hook{
     border-radius: 2rem 2rem 0rem 0rem;
@@ -227,7 +227,7 @@ a.btn:active{
 }
 
 
-/* styling first section -------------- */
+/* styling first section --------------------------- */
 
 .first{
     color: var(--white, #FFF);
@@ -605,4 +605,197 @@ footer{
     color: #FFF;
     background-color: #050540;
 }
+
+/* media query --------------------------- -------------------------------
+-------------     -------------------------------------------------------------
+------------------------------------------------       ----------------------------- */
+
+@media screen and (min-width: 40rem) {
+
+
+  header, main, footer{
+    max-width: 90rem;
+  }
+
+  html{
+    font-size: 1.2rem;
+    line-height: normal;
+ }
+
+ h2, h3, p{
+    padding: 2rem 4rem 0rem 4rem;
+ }
+ h2{
+    font-size: 2.2rem;
+ }
+ h3{
+    font-size: 1.8rem;
+ }
+ p{
+    font-size: 1.2rem;
+ }
+
+/*split screen control -------- */
+
+  .left{
+    position: fixed;
+    width: 45%;
+    float: left;
+    height: 100%;
+    z-index: 1
+  }
+
+  .right{
+    position: relative;
+    width: 55%;
+    float: right;
+    height: 100%;
+  }
+
+  /* fixing header ------------------------- */
+  header{
+    width: 45%;
+    float: left;
+  }
+  .topbar{
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+  .logomark{
+    width: 0%;
+    visibility: hidden;
+  }
+
+  .popup-abt{
+    font-size: 1.4rem;
+  }
+
+  #abt{
+    width: 50%;
+    float: right;
+    height: 100%;
+  }
+
+  .popup-box{
+    margin: 3.5rem 2rem 3rem 2rem;
+  }
+
+  .closebtn{
+    top: 25px;
+    right: 15px;
+  }
+
+  .logo{
+    padding: 1rem;
+   /* margin-top: 3rem;*/
+  }
+  
+  .stickers{
+    width: 45%;
+    top: 34rem;
+  }
+
+ /* differnt section fixing --------------- */
+
+ .hook{
+    border-radius: 0rem;
+    margin-top: 0rem;
+    padding: 12rem 3rem 6rem 3rem;
+ }
+ .hook h2{
+    font-size: 1.6rem;
+ }
+ .hook p{
+    font-size: 1rem;
+    padding-top: 1.6rem;
+ }
+ a.btn:link{
+    margin: 5rem auto 4rem auto;
+ }
+
+ .first h2 {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+ }
+ .video{
+    padding: 0rem 4rem;
+ }
+
+.first details > summary{
+    margin: 1.6rem 4rem 1.6rem 4rem;
+}
+.first p{
+    padding-top: 1rem;
+}
+
+.stats img{
+    width: 50%;
+}
+.stats{
+    padding: 1.2rem 4rem 1.2rem 3.8rem;
+    margin: 0rem auto;
+}
+
+.second details{
+    padding: 2rem 4rem;
+}
+.second summary{
+    border-bottom: 1px solid #ffffff;
+}
+.diet p{
+    padding-top: 1rem;
+}
+
+.third{
+    border-radius: 0rem;
+}
+.third h2{
+    padding-bottom: 1rem;
+}
+.third ol{
+    padding: 2rem 4rem;
+}
+.stickers2{
+    visibility: hidden;
+    margin-top: -18rem;
+}
+
+.final{
+    background-color: #e5f0ff;
+    margin-top: -2rem;
+}
+.final h2{
+    padding-top: 4rem;
+}
+.final ul{
+    padding: 2rem 4rem;
+}
+
+.form{
+    padding: 0rem 8rem;
+}
+input[type="submit"]{
+    font-size: 1rem;
+}
+
+.footer{
+    background-color: #FFF;
+}
+.btt img{
+    width: 35%;
+}
+.btt{
+    padding-right: 0rem;
+}
+.credits p{
+    padding: 1rem 0rem;
+    font-size: 1rem;
+}
+
+}
+
+
+
+
+
 
