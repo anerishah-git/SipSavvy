@@ -671,13 +671,16 @@ footer{
   }
 
   #abt{
-    width: 50%;
+    width: 45%;
     float: right;
     height: 100%;
   }
 
   .popup-box{
-    margin: 3.5rem 2rem 3rem 2rem;
+    margin: 4rem 2rem 3rem 2rem;
+  }
+  .popup-box p{
+    padding-top: 0rem;
   }
 
   .closebtn{
