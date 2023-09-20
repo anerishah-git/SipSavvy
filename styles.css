@@ -120,7 +120,7 @@ header{
 .popup-box {
     background:#FFBA30;
     text-align:left;
-    margin: 3.5rem 2rem 3.5rem 2rem;
+    margin: 4rem 2rem 9rem 2rem;
     padding: 1rem 1rem 2rem 1rem;
 
     box-shadow:0px 2px 16px rgba(0,0,0,0.5);
@@ -227,7 +227,7 @@ a.btn:active{
 }
 
 
-/* styling first section --------------------------- */
+/* styling first section ------------------------------------------------ */
 
 .first{
     color: var(--white, #FFF);
@@ -254,7 +254,7 @@ a.btn:active{
 /*styling video ----- */
 .video{
     width: 100%;
-    height: 100%;
+    height: 13rem;
     margin: 1rem auto;
 }
 
@@ -296,7 +296,7 @@ a.btn:active{
 
 }
 
-/* styling second section -------------- */
+/* styling second section ----------------------------------------------------------- */
 
 .second{
     color: var(--white, #FFF);
@@ -324,6 +324,7 @@ a.btn:active{
 
 .second details > summary:hover{
     font-style: normal;
+    color: #FFDA90;
 }
 .second details > summary:focus{
     border-bottom: none;
@@ -381,6 +382,7 @@ a.btn:active{
 }
 .container input:checked ~ .checkmark {
     background-color: #FFBA30;
+    border: #F1F7FF;
 }
 .checkmark:after {
     content: "";
@@ -407,7 +409,7 @@ label {
     cursor: pointer;
   }
 
-/* styling third section -------------- */
+/* styling third section ------------------------------------------ */
 .third{
     border-radius: 0rem 0rem 2rem 2rem;
 
@@ -452,14 +454,14 @@ label {
     padding-bottom: 1rem;
 }
 .lk:link{
-    color: #FFDA90;
+    color: #FFBA30;
 }
 .lk:visited{
-    color: #C2D5FF;
+    color: #cbdbfd;
 }
 .lk:hover{
     text-decoration: none;
-    color: #FFBA30;
+    color: #FFDA90;
 }
 .lk:focus{
     color: #ffffff;
@@ -606,9 +608,9 @@ footer{
     background-color: #050540;
 }
 
-/* media query --------------------------- -------------------------------
--------------     -------------------------------------------------------------
-------------------------------------------------       ----------------------------- */
+/* media query - ipad screen --------------------------- -------------------------------
+-------------     --------------------------------------------------------------------
+------------------------------------------------       --------------------------------------------- */
 
 @media screen and (min-width: 40rem) {
 
@@ -622,8 +624,8 @@ footer{
     line-height: normal;
  }
 
- h2, h3, p{
-    padding: 2rem 4rem 0rem 4rem;
+ h2, h3 {
+    padding: 4rem 4rem 1rem 4rem;
  }
  h2{
     font-size: 2.2rem;
@@ -633,8 +635,144 @@ footer{
  }
  p{
     font-size: 1.2rem;
+    padding: 1rem 4rem;
+ }
+ li{
+    font-size: 1.2rem;
  }
 
+ /* header fixing ------------ */
+ 
+ .topbar{
+    padding-left: 2rem;
+    padding-right: 2rem;
+ }
+ .logomark{
+    width: 9%;
+  }
+  .popup-box{
+    margin: 4rem 6rem 8rem 6rem;
+  }
+  .popup-abt{
+    font-size: 1.4rem;
+  }
+
+  .logo{
+    padding: 2rem 4rem;
+  }
+  
+  .stickers{
+    width: 0%;
+    visibility: hidden;
+  }
+
+  /* different section fixing --------------- */
+  .hook{
+    border-radius: 4rem 4rem 0rem 0rem;
+    margin-top: 0rem;
+    padding: 2rem 0rem 2rem 0rem;
+  }
+
+  .first h2{
+    padding-top: 4rem;
+  }
+
+  .video {
+    width: 100%;
+    height: 20rem;
+    margin: 1rem auto;
+    padding: 0rem 4rem;
+  }
+
+  .first details > summary{
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+
+  .stats img{
+    width: 45%;
+  }
+
+  .stats{
+    padding: 2rem 4rem 2rem 3rem;
+    gap: 3.5rem;
+  }
+  .second details {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .third h2{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .third ol{
+    padding: 2rem 4rem;
+  }
+
+  .stickers2{
+    margin-top: -5rem;
+  }
+
+  .final ul{
+    padding: 1rem 4rem;
+  }
+  .form{
+    padding: 1rem 4rem;
+  }
+  input[type="submit"] {
+    font-size: 1rem;
+    width: 14rem;
+  }
+  .btt img{
+    width: 55%;
+  }
+  .btt{
+    padding-right: 0rem;
+  }
+  .credits p{
+    padding: 0.5rem 0rem 0rem 0rem;
+    font-size: 0.8rem;
+  }
+
+  
+
+
+}
+
+
+/* media query - desktop screen --------------------------- -------------------------------
+-------------     --------------------------------------------------------------------
+------------------------------------------------       --------------------------------------------- */
+
+@media screen and (min-width: 70rem) {
+
+
+    header, main, footer{
+      max-width: 90rem;
+    }
+  
+    html{
+      font-size: 1.2rem;
+      line-height: normal;
+   }
+  
+   h2, h3, p{
+      padding: 2rem 4rem 0rem 4rem;
+   }
+   h2{
+      font-size: 2.2rem;
+   }
+   h3{
+      font-size: 1.8rem;
+   }
+   p{
+      font-size: 1.2rem;
+   }
+   li{
+      font-size: 1.2rem;
+   }
+  
 /*split screen control -------- */
 
   .left{
@@ -720,12 +858,18 @@ footer{
     padding-top: 4rem;
     padding-bottom: 1rem;
  }
+
+ .rethink{
+    padding: 0rem 3rem;
+ }
  .video{
     padding: 0rem 4rem;
+    width: 100%;
+    height: 18rem;
  }
 
 .first details > summary{
-    margin: 1.6rem 4rem 1.6rem 4rem;
+    margin: 2rem 4rem 1rem 4rem;
 }
 .first p{
     padding-top: 1rem;
@@ -781,17 +925,221 @@ input[type="submit"]{
     font-size: 1rem;
 }
 
-.footer{
-    background-color: #FFF;
+footer{
+    width: 55%;
+    float: right;
+    background-color: #e5f0ff;
 }
 .btt img{
-    width: 35%;
+    width: 55%;
 }
 .btt{
     padding-right: 0rem;
 }
 .credits p{
-    padding: 1rem 0rem;
+    padding: 0.5rem 0rem 0rem 0rem;
+    font-size: 0.8rem;
+}
+
+}
+
+
+/* media query - wider screen --------------------------- -------------------------------
+-------------     --------------------------------------------------------------------
+------------------------------------------------       --------------------------------------------- */
+
+@media screen and (min-width: 120rem) {
+
+
+    /*header, main, footer{
+      max-width: 90rem;
+    }*/
+  
+    html{
+      font-size: 1.4rem;
+      line-height: normal;
+   }
+  
+   h2, h3, p{
+      padding: 2rem 6rem 0rem 6rem;
+   }
+   h2{
+      font-size: 2.4rem;
+   }
+   h3{
+      font-size: 2rem;
+   }
+   p{
+      font-size: 1.4rem;
+   }
+   li{
+      font-size: 1.4rem;
+   }
+  
+/*split screen control -------- */
+
+  .left{
+    position: fixed;
+    width: 40%;
+    float: left;
+    height: 100%;
+    z-index: 1
+  }
+
+  .right{
+    position: relative;
+    width: 60%;
+    float: right;
+    height: 100%;
+  }
+
+  /* fixing header ------------------------- */
+  header{
+    width: 40%;
+    float: left;
+  }
+  .topbar{
+    justify-content: flex-start;
+    padding: 3rem;
+  }
+  .logomark{
+    width: 0%;
+    visibility: hidden;
+  }
+
+  .popup-abt{
+    font-size: 1.6rem;
+  }
+
+  #abt{
+    width: 60%;
+    float: left;
+    height: 100%;
+  }
+
+  .popup-box{
+    margin: 5rem 4rem 6rem 5rem;
+  }
+  .popup-box p{
+    padding-top: 0rem;
+  }
+
+  .closebtn{
+    top: 25px;
+    right: 15px;
+  }
+
+  .logo{
+    padding: 2rem;
+  }
+  
+  .stickers{
+    width: 40%;
+    top: 45rem;
+  }
+
+ /* differnt section fixing --------------- */
+
+ .hook{
+    border-radius: 0rem;
+    margin-top: 0rem;
+    padding: 16rem 6rem 6rem 6rem;
+ }
+ .hook h2{
+    font-size: 1.8rem;
+ }
+ .hook p{
+    font-size: 1.2rem;
+    padding-top: 1.8rem;
+ }
+ a.btn:link{
+    margin: 6rem auto 6rem auto;
+ }
+
+ .first h2 {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+ }
+
+ .rethink{
+    padding: 0rem 4rem;
+ }
+ .video{
+    padding: 0rem 6rem;
+    width: 100%;
+    height: 20rem;
+ }
+
+.first details > summary{
+    margin: 3rem 6rem 1rem 6rem;
+}
+.first p{
+    padding-top: 2rem;
+}
+
+.stats img{
+    width: 50%;
+}
+.stats{
+    padding: 1.4rem 6rem 1.5rem 5.4rem;
+    margin: 0rem auto;
+}
+
+.second details{
+    padding: 3rem 6rem;
+}
+.second summary{
+    border-bottom: 1.5px solid #ffffff;
+}
+.diet p{
+    padding-top: 2rem;
+}
+
+.third{
+    border-radius: 0rem;
+}
+.third h2{
+    padding-bottom: 2rem;
+}
+.third ol{
+    padding: 2.5rem 6rem;
+}
+.stickers2{
+    visibility: hidden;
+    margin-top: -18rem;
+}
+
+.final{
+    background-color: #e5f0ff;
+    margin-top: -4rem;
+}
+.final h2{
+    padding-top: 6rem;
+}
+.final ul{
+    padding: 2rem 4rem;
+}
+
+.form{
+    padding: 0rem 10rem;
+}
+input[type="submit"]{
+    font-size: 1rem;
+}
+
+footer{
+    width: 60%;
+    float: right;
+    background-color: #e5f0ff;
+}
+.btt img{
+    width: 55%;
+}
+.btt{
+    padding-right: 0rem;
+}
+.credits p{
+    padding: 1rem 0rem 0rem 0rem;
     font-size: 1rem;
 }
 
