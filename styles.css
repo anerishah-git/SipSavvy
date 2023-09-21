@@ -166,7 +166,7 @@ header{
 
 .logo{
     margin-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 2rem 2rem 5rem 2rem;
 }
 
 
@@ -658,12 +658,11 @@ footer{
   }
 
   .logo{
-    padding: 2rem 4rem;
+    padding: 6rem;
   }
   
   .stickers{
     width: 0%;
-    visibility: hidden;
   }
 
   /* different section fixing --------------- */
@@ -827,7 +826,7 @@ footer{
   }
 
   .logo{
-    padding: 1rem;
+    padding: 6rem;
    /* margin-top: 3rem;*/
   }
   
