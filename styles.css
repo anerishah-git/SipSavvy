@@ -64,7 +64,7 @@ header{
 .topbar{
     /*width: 50%;*/
     margin: 0 auto;
-    padding: 1rem 1.6rem 1rem 1.6rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
 
     list-style-type: none;
     display: flex;
@@ -88,7 +88,7 @@ header{
 }
 
 .popup-abt{
-    background: var(--yellow, #FFBA30);
+    background:#feca63;
     font-size: 1.2rem;
 
     display: inline-flex;
@@ -118,7 +118,7 @@ header{
 }
 
 .popup-box {
-    background:#FFBA30;
+    background:#feca63;
     text-align:left;
     margin: 4rem 2rem 9rem 2rem;
     padding: 1rem 1rem 2rem 1rem;
@@ -145,7 +145,7 @@ header{
     font-size: 1.5rem;
     text-decoration:none;
     color:#050540;
-    background-color: #FFBA30;
+    background-color: #feca63;
     box-shadow:0px 2px 16px rgba(0,0,0,0.5);
     border-radius: 5rem;
     border: none;
@@ -219,7 +219,7 @@ a.btn:hover{
 }
 a.btn:focus{
     outline: none;
-    background-color: #867DFF;
+    background-color: #b3aefa;
 }
 a.btn:active{
     box-shadow: none;
@@ -383,6 +383,7 @@ a.btn:active{
 .container input:checked ~ .checkmark {
     background-color: #FFBA30;
     border: #F1F7FF;
+    border-width: 0.5rem;
 }
 .checkmark:after {
     content: "";
@@ -616,7 +617,7 @@ footer{
 
 
   header, main, footer{
-    max-width: 90rem;
+    max-width: 100%;
   }
 
   html{
@@ -657,8 +658,13 @@ footer{
     font-size: 1.4rem;
   }
 
+.closebtn{
+    top: 65px;
+    right: 65px;
+}
+
   .logo{
-    padding: 5rem 6rem 6rem 6rem;
+    padding: 4rem 8rem 6rem 8rem;
   }
   
   .stickers{
@@ -669,7 +675,7 @@ footer{
   .hook{
     border-radius: 4rem 4rem 0rem 0rem;
     margin-top: 0rem;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 1rem 0rem 2rem 0rem;
   }
 
   .first h2{
@@ -686,6 +692,7 @@ footer{
   .first details > summary{
     margin-right: 4rem;
     margin-left: 4rem;
+    margin-bottom: 2rem;
   }
 
   .stats img{
@@ -693,12 +700,20 @@ footer{
   }
 
   .stats{
-    padding: 2rem 4rem 2rem 3rem;
-    gap: 3.5rem;
+    padding: 2rem 5rem 2rem 3rem;
+    gap: 3rem;
+  }
+
+  .second h2{
+    padding-top: 3rem;
   }
   .second details {
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-bottom: 2rem;
+  }
+  .diet{
+    padding-bottom: 3rem;
   }
 
   .third h2{
@@ -706,7 +721,7 @@ footer{
     padding-bottom: 2rem;
   }
   .third ol{
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 2rem 4.4rem;
   }
 
   .stickers2{
@@ -717,7 +732,7 @@ footer{
     padding: 1rem 4rem;
   }
   .form{
-    padding: 1rem 4rem;
+    padding: 1rem 8rem;
   }
   input[type="submit"] {
     font-size: 1rem;
@@ -745,11 +760,6 @@ footer{
 ------------------------------------------------       --------------------------------------------- */
 
 @media screen and (min-width: 70rem) {
-
-
-    header, main, footer{
-      max-width: 90rem;
-    }
   
     html{
       font-size: 1.2rem;
@@ -927,7 +937,7 @@ input[type="submit"]{
 footer{
     width: 55%;
     float: right;
-    background-color: #e5f0ff;
+    background-color: #F1F7FF;
 }
 .btt img{
     width: 55%;
@@ -949,11 +959,6 @@ footer{
 
 @media screen and (min-width: 120rem) {
 
-
-    /*header, main, footer{
-      max-width: 90rem;
-    }*/
-  
     html{
       font-size: 1.4rem;
       line-height: normal;
@@ -998,12 +1003,8 @@ footer{
     float: left;
   }
   .topbar{
-    justify-content: flex-start;
+    justify-content: flex-end;
     padding: 3rem;
-  }
-  .logomark{
-    width: 0%;
-    visibility: hidden;
   }
 
   .popup-abt{
@@ -1012,7 +1013,7 @@ footer{
 
   #abt{
     width: 60%;
-    float: left;
+    float: right;
     height: 100%;
   }
 
@@ -1069,78 +1070,78 @@ footer{
     height: 21rem;
  }
 
-.first details > summary{
+ .first details > summary{
     margin: 3rem 6rem 1rem 6rem;
-}
-.first p{
+  }
+  .first p{
     padding-top: 2rem;
-}
+ }
 
-.stats img{
+ .stats img{
     width: 50%;
-}
-.stats{
+ }
+ .stats{
     padding: 1.4rem 6rem 1.5rem 5.4rem;
     margin: 0rem auto;
-}
+ }
 
-.second details{
+ .second details{
     padding: 3rem 6rem;
-}
-.second summary{
+ }
+ .second summary{
     border-bottom: 1.5px solid #ffffff;
-}
-.diet p{
+ }
+ .diet p{
     padding-top: 2rem;
-}
+ }
 
-.third{
+ .third{
     border-radius: 0rem;
-}
-.third h2{
+ }
+ .third h2{
     padding-bottom: 2rem;
-}
-.third ol{
+ }
+ .third ol{
     padding: 2.5rem 6rem;
-}
-.stickers2{
+ }
+ .stickers2{
     visibility: hidden;
-    margin-top: -18rem;
-}
+    margin-top: -6rem; 
+ }
 
-.final{
+ .final{
     background-color: #e5f0ff;
-    margin-top: -4rem;
-}
-.final h2{
+    margin-top: -7rem;
+ }
+ .final h2{
     padding-top: 6rem;
-}
-.final ul{
+ }
+ .final ul{
     padding: 2rem 4rem;
-}
+ }
 
-.form{
+ .form{
     padding: 0rem 10rem;
-}
-input[type="submit"]{
+ }
+ input[type="submit"]{
     font-size: 1rem;
-}
+ }
 
-footer{
+ footer{
     width: 60%;
     float: right;
-    background-color: #e5f0ff;
-}
-.btt img{
+    background-color: #F1F7FF;
+ }
+ .btt img{
     width: 55%;
-}
-.btt{
+ }
+ .btt{
     padding-right: 0rem;
-}
-.credits p{
+ }
+ .credits p{
     padding: 1rem 0rem 0rem 0rem;
     font-size: 1rem;
-}
+ }
 
 }
 
