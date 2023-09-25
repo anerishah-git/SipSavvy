@@ -508,8 +508,10 @@ label {
 }
 
 /* styling form and labels */
+
 form {
     margin: 0 auto;
+    width: 100%;
     
     display: flex;
     flex-direction: column;
@@ -518,16 +520,6 @@ form {
     align-items: center;
 }
 
-.form {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5px;
-    width: 100%;
-    padding: 0rem 1.6rem 0rem 1.6rem;
-
-    font-style: bold;
-}
 
 input[type="text"],
 input[type="email"] {
@@ -545,8 +537,8 @@ input[type="submit"] {
     box-shadow: 4px 4px 0px 0px #050540; 
 
     width: 14rem;
-    padding: 10px;
-    margin: 3rem;
+    padding: 0.5rem;
+    margin: 1rem 3rem;
 
     cursor: pointer;
 }
@@ -560,7 +552,7 @@ input[type="submit"]:hover {
 }
 input[type="submit"]:focus {
     outline: none;
-    background-color: #867DFF;
+    background-color: #a9a3fb;
 }
 input[type="submit"]:active {
     box-shadow: none;
@@ -731,8 +723,9 @@ footer{
   .final ul{
     padding: 1rem 4rem;
   }
-  .form{
-    padding: 1rem 8rem;
+  form{
+    padding: 0rem 8rem;
+    margin-top: 0rem;
   }
   input[type="submit"] {
     font-size: 1rem;
@@ -927,7 +920,7 @@ footer{
     padding: 2rem 4rem;
 }
 
-.form{
+form{
     padding: 0rem 8rem;
 }
 input[type="submit"]{
@@ -1120,8 +1113,9 @@ footer{
     padding: 2rem 4rem;
  }
 
- .form{
+ form{
     padding: 0rem 10rem;
+    margin-top: 0rem;
  }
  input[type="submit"]{
     font-size: 1rem;
