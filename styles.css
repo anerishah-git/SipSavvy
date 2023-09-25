@@ -276,7 +276,7 @@ a.btn:active{
     transition: transform 0.2s ease;
 }
 .first details > summary:focus{
-    font-style: bold;
+    border: #e5f0ff;
 } 
 
 /* stats info styling */
