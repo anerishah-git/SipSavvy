@@ -90,6 +90,9 @@ header{
 .popup-abt{
     background:#feca63;
     font-size: 1.2rem;
+    font-weight: 600;
+    color: #020230;
+    border: 0px;
 
     display: inline-flex;
     height: 0.8rem;
@@ -256,8 +259,11 @@ a.btn:active{
     width: 100%;
     height: 14rem;
     margin: 1rem auto;
+    border: 0px;
 }
-
+iframe{
+    border: 0px;
+}
 .first h3 {
     padding-bottom: 0rem;
     line-height: 140%;
@@ -838,6 +844,7 @@ footer{
     top: 34rem;
   }
 
+
  /* differnt section fixing --------------- */
 
  .hook{
@@ -863,6 +870,7 @@ footer{
 
  .rethink{
     padding: 0rem 3rem;
+    margin-top: 1rem;
  }
  .video{
     padding: 0rem 4rem;
@@ -902,7 +910,7 @@ footer{
     padding-bottom: 1rem;
 }
 .third ol{
-    padding: 2rem 4rem;
+    padding: 2rem 4.5rem;
 }
 .stickers2{
     visibility: hidden;
@@ -1056,7 +1064,9 @@ footer{
 
  .rethink{
     padding: 0rem 4rem;
+    margin-top: 2rem;
  }
+ 
  .video{
     padding: 0rem 6rem;
     width: 100%;
